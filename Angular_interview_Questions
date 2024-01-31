@@ -1,0 +1,175 @@
+What is Angular?
+ What are Angular advantages?
+ What is the difference between AngularJS and Angular?
+ What is NPM?
+ What is CLI tool?
+ What are Components in Angular?
+ What is a Selector and Template?
+ What is Module in Angular? What is app.module.ts file?
+ How an Angular App gets Loaded and Started? What are index.html, app-root, selector and main.ts?
+What is a Bootstrapped Module & Bootstrapped Component?
+ - What is Data Binding in Angular?
+- What is String Interpolation in Angular?
+ - What is Property Binding in Angular?
+ - What is Event Binding in Angular?
+ - What is Two way Binding in Angular?
+ - What are Directives? What are the type of directives?
+ - What is *ngIf Structural directive?
+ - What is *ngFor Structural directive?
+ - What is *ngSwitch Structural directive?
+ What is [ngStyle] Attribute directive?
+- What is [ngClass] Attribute directive?
+ What is the difference between Component, Attribute and Structural Directives?
+ What is Decorator?
+ What are the types of Decorator?
+ What are Pipes? What are the types of Pipes & Parameterized Pipes?
+ What is Chaining Pipes?
+ Explain Services with Example?
+ How to create Servicein Angular?
+ How to use Dependency Injector with Services in Angular?
+ What is Hierarchical Dependency Injection?
+ What is Provider in  Angular?
+ What is the role of @Injectable Decorator in a Service?
+ What are Parent-Child Components?
+ What are Lifecycle Hooks in Angular?
+ What is a Constructor in Angular?
+What is ngOnInit life cycle hook in Angular?
+ What is the difference between constructor and ngOnInit?
+What are Asynchronous operations?
+ What is the difference between Promise and Observable?
+ What is RxJS?
+What is Observable? How to implement Observable
+ What is the role of HttpClient in Angular?
+ What is Typescript? Or What is the difference between Typescript and Javascript?
+What is the difference between let and var keyword?
+ What is Type annotation?
+ What are Built in/ Primitive and User-Defined/ Non-primitive Types in Typescript?
+What is "any" type in Typescript?
+ What is Enum type in Typescript?
+What is Type Assertion in Typescript?
+ What are Arrow Functions in Typescript?
+
+
+Answers:
+What is Angular?
+Angular is a popular open-source web application framework developed by Google. It's written in TypeScript and helps in building dynamic, single-page web applications (SPAs).
+Advantages of Angular:
+Modularity: Angular allows the development of modular applications, making it easier to manage and scale.
+Two-way Data Binding: Simplifies synchronization between the model and view.
+Dependency Injection: Promotes code maintainability and testability.
+Reusable Components: Encourages building components that can be reused throughout the application.
+MVVM Architecture: Facilitates a clean separation of concerns.
+Difference between AngularJS and Angular:
+AngularJS is the first version of the framework, while Angular (Angular 2 and later) is a complete rewrite with improved architecture, modularity, and performance.
+Angular Concepts:
+NPM (Node Package Manager):
+NPM is the package manager for JavaScript, used to install and manage packages or libraries, including those for Angular.
+CLI Tool (Command Line Interface):
+Angular CLI is a command-line tool for creating, building, testing, and deploying Angular applications.
+Components in Angular:
+Components are the basic building blocks of an Angular application, representing elements with specific functionality and UI.
+Selector and Template:
+Selector: Defines how a component is identified in the HTML.
+Template: Represents the component's view using Angular's template syntax.
+Module in Angular:
+A module in Angular is a container for organizing related components, directives, pipes, and services. The app.module.ts file is the main module file for an Angular application.
+Angular App Loading:
+index.html: The main HTML file where the Angular app is loaded.
+app-root: The selector used in index.html to inject the root component.
+main.ts: The main entry point where the Angular app is bootstrapped.
+Bootstrapped Module & Component:
+Bootstrapped Module: The main module that is loaded when the application starts.
+Bootstrapped Component: The component associated with the bootstrapped module, often named AppComponent.
+Data Binding:
+Data Binding in Angular:
+It is a mechanism to synchronize data between the model and the view in both directions.
+String Interpolation:
+A way to embed expressions into marked up text using double curly braces {{ expression }}.
+Property Binding:
+Binding values to an element property using square brackets [property]="value".
+Event Binding:
+Binding methods to an element event using parentheses (event)="method()".
+Two-way Binding:
+Combining property binding and event binding using [(ngModel)] for input elements.
+Directives:
+Directives: Directives are markers on a DOM element that tell Angular to do something to that element.
+Types of Directives:
+Component Directives: Used for creating components.
+Attribute Directives: Change the appearance or behavior of an element.
+Structural Directives: Change the DOM layout by adding, removing, or manipulating elements.
+Structural Directives:
+ngIf: Conditionally renders elements based on a given expression.
+ngFor: Iterates over a collection of data and renders elements for each item.
+ngSwitch: Conditionally renders content based on multiple cases.
+Attribute Directives:
+[ngStyle]: Sets inline styles based on an expression.
+[ngClass]: Adds or removes CSS classes based on an expression.
+Decorators:
+Decorator: A special kind of declaration that can be attached to a class declaration, method, accessor, property, or parameter.
+Types of Decorators:
+Class Decorator: Applied to a class.
+Property Decorator: Applied to a property.
+Method Decorator: Applied to a method.
+Parameter Decorator: Applied to a parameter.
+Pipes:
+Pipes: Transform data in Angular templates.
+Types of Pipes:
+Built-in Pipes: Provided by Angular.
+Custom Pipes: User-defined pipes.
+Chaining Pipes:
+Multiple pipes can be chained to transform data sequentially.
+Services:
+Services in Angular:
+Services are reusable, injectable objects that encapsulate logic and data shared across components.
+Creating a Service:
+Define a class with the @Injectable decorator.
+Dependency Injector with Services:
+Angular's Dependency Injection system injects services into components or other services.
+Hierarchical Dependency Injection:
+Services can be provided at various levels, creating a hierarchy of injectors.
+Provider in Angular:
+A provider is a configuration object that tells Angular how to obtain or create a service.
+@Injectable Decorator:
+Indicates that a class is available for dependency injection.
+Components and Lifecycle:
+Parent-Child Components:
+Components can be organized in a parent-child relationship, allowing communication between them.
+Lifecycle Hooks:
+Hooks like ngOnInit, ngOnChanges, etc., provide insight into the lifecycle of a component.
+Constructor in Angular:
+The constructor is a method that gets executed when an instance of a class is created.
+ngOnInit Lifecycle Hook:
+Executed after the constructor when Angular has initialized the component.
+Difference between Constructor and ngOnInit:
+The constructor is a standard JavaScript/TypeScript feature, while ngOnInit is an Angular-specific lifecycle hook.
+Asynchronous Operations and RxJS:
+Asynchronous Operations:
+Operations that don't block the execution of code.
+Difference between Promise and Observable:
+Promises handle a single value, while Observables handle a sequence of values over time.
+RxJS:
+A library for reactive programming using Observables.
+Observable in Angular:
+An Observable is a stream of data that can be observed over time.
+Implementing Observable:
+Create an observable using the Observable class from RxJS.
+HttpClient in Angular:
+Angular's HttpClient module facilitates making HTTP requests and receiving responses.
+TypeScript:
+TypeScript:
+A superset of JavaScript that adds static typing to the language.
+Difference between let and var:
+let has block scope, while var has function scope.
+Type Annotation:
+Specifying the data type of a variable.
+Types in TypeScript:
+Built-in/Primitive Types: Number, String, Boolean, etc.
+User-Defined/Non-Primitive Types: Arrays, Objects, Functions, etc.
+"any" Type:
+A type that can represent any data type.
+Enum Type:
+A way to define a set of named constant values.
+Type Assertion:
+Explicitly telling the compiler about the type of a variable.
+Arrow Functions:
+A concise way to write functions in TypeScript.
