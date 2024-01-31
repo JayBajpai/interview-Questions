@@ -1,0 +1,55 @@
+Collections Used in Your Project:
+In my project, I used various collections such as:
+ArrayList
+LinkedList
+HashSet
+HashMap
+TreeMap
+2. Difference Between List and Set:
+List: Ordered collection that allows duplicate elements. Access elements by index.
+Set: Unordered collection that does not allow duplicate elements.
+3. Difference Between ArrayList and LinkedList:
+ArrayList: Implements dynamic arrays. Efficient for random access and iterating. Slower for insertions and deletions.
+LinkedList: Implements doubly-linked lists. Efficient for insertions and deletions. Slower for random access.
+4. List Object Creation Scenario:
+java
+
+ArrayList<String> arrayList = new ArrayList<>(); List<String> list = new ArrayList<>(); 
+5. Declaring a List Field with the Final Keyword:
+java
+
+private final List<String> myList = new ArrayList<>(); 
+6. Writing a Custom ArrayList to Avoid Duplicates:
+java
+
+public class UniqueArrayList<E> extends ArrayList<E> { @Override public boolean add(E element) { if (!contains(element)) { return super.add(element); } return false; } } 
+7. Why Set Doesn't Allow Duplicate Elements:
+A Set is designed to model the mathematical set abstraction, and by definition, sets don't allow duplicate elements.
+8. Difference Between Comparable and Comparator:
+Comparable: Interface for the natural ordering of objects. The class of objects implements the Comparable interface.
+Comparator: Interface for external comparison. A separate class or lambda expression can implement the Comparator interface.
+9. Multi-Comparing Using Comparator Scenario:
+java
+
+List<Student> students = // List of students students.sort(Comparator.comparing(Student::getGrade).thenComparing(Student::getName)); 
+10. Difference Between Fail-Fast and Fail-Safe Iterator:
+Fail-Fast Iterator: Throws ConcurrentModificationException if the collection is modified during iteration.
+Fail-Safe Iterator: Allows modifications during iteration without throwing exceptions. Examples are CopyOnWriteArrayList and CopyOnWriteArraySet.
+Example:
+java
+
+List<String> myList = new CopyOnWriteArrayList<>(); Iterator<String> iterator = myList.iterator(); myList.add("New Element"); iterator.next(); // No ConcurrentModificationException 
+11. Need for ConcurrentHashMap and Differences from HashMap:
+ConcurrentHashMap is designed for concurrent access without explicit synchronization. It provides better performance in a multi-threaded environment compared to HashMap due to its segmented structure.
+12. Why ConcurrentHashMap Despite Synchronized Hashtable:
+ConcurrentHashMap provides better concurrency by dividing the map into segments, allowing multiple threads to operate on different segments simultaneously. Synchronized Hashtable locks the entire map, causing contention in a high-concurrency environment.
+13. Synchronizing HashMap Using Collections:
+Synchronizing a HashMap using Collections.synchronizedMap(map) introduces a single lock for the entire map, similar to Hashtable. It doesn't provide the fine-grained concurrency control that ConcurrentHashMap offers.
+14. HashMap Internal Working:
+HashMap uses a hash table to store key-value pairs. The key is hashed to find the index, and collision resolution is handled using linked lists (or balanced trees in Java 8+). Load factor determines when to resize the hash table.
+15. Handling Null Keys in HashMap:
+If the key is null in HashMap, it will be stored in the first bucket (index 0) as the hash code for null is usually 0.
+16. Map Enhancement in Java 8:
+Java 8 introduced several enhancements for maps, including the compute, computeIfAbsent, and computeIfPresent methods, as well as the forEach method.
+17. TreeMap Internal Working:
+TreeMap uses a Red-Black Tree to store key-value pairs. It maintains elements in sorted order based on their natural order or a specified comparator.
